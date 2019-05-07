@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+
+.game {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../images/bgc1.jpg") no-repeat fixed;
+  background-size: 100% auto;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  @media screen and (max-width: $breakpoint-lg) {
+    background-size: cover;
+  }
+}
+h2{
+  color: white;
+}

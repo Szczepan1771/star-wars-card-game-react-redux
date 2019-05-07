@@ -1,0 +1,106 @@
+@import '../../../styles/variables';
+
+.mt--50 {
+  margin-top: -50px;
+}
+
+.fullwidth {
+  margin-top: 30px;
+
+  .rebels, .light__side, .dark__side, .bounty__hunter {
+    &:before {
+      position: absolute;
+      top: -30px;
+      color: $c-yellow;
+      font-family: $font;
+    }
+  }
+
+  .rebels:before {
+    content: "REBELS";
+  }
+
+  .light__side:before {
+    content: "JEDI";
+  }
+
+  .dark__side:before {
+    content: "SITH";
+  }
+
+  .bounty__hunter:before {
+    content: "BOUNTY HUNTERS";
+  }
+
+  .selectedCards {
+    justify-content: space-between;
+    border: none;
+
+    .card {
+      width: 20%;
+      cursor: default;
+
+      &__attack {
+        left: 15px;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+}
+
+.legend {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    width: 30px;
+    margin-right: 5px;
+    height: 30px;
+  }
+}
+
+.modal {
+  .game_container {
+    cursor: default;
+    h2 {
+      left: 15px;
+      width: fit-content;
+    }
+    &#opponent-1 {
+      box-shadow: 0 0 0 6px yellow;
+      img {
+        filter: none;
+      }
+    }
+
+    &:hover {
+      box-shadow: none;
+      cursor: default;
+      img {
+        filter: grayscale(100%);
+      }
+    }
+  }
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .fullwidth {
+    width: 100%;
+  }
+}

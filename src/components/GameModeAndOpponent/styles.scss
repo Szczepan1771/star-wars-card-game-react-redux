@@ -1,0 +1,40 @@
+.game_container{
+  position: relative;
+  box-sizing: border-box;
+  background-color: black;
+  display: inline-block;
+  width: 22%;
+  margin: 1.5%;
+  height: 60vh;
+  box-shadow: 0 0 0 4px black;
+  border-radius: 5%;
+  overflow: hidden;
+  transition: .8s;
+  cursor: pointer;
+  img{
+    position: absolute;
+    width: 100%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(100%);
+    transition: .8s;
+  }
+  h2{
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    color: yellow;
+    letter-spacing: 1px;
+    font-size: 35px;
+    z-index:1;
+    transition: .8s;
+  }
+  &:hover{
+    box-shadow: 0 0 0 6px yellow;
+    cursor: pointer;
+    img{
+      filter: grayscale(0);
+    }
+  }
+}

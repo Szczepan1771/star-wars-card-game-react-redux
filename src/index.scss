@@ -1,0 +1,78 @@
+@import "./styles/_variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+html {
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: star-wars-jedi;
+  src: url("./fonts/Starjedi.ttf");
+}
+
+@font-face {
+  font-family: star-wars-hol;
+  src: url("./fonts/Starjhol.ttf");
+}
+
+@font-face {
+  font-family: tie-wind;
+  src: url("./fonts/TIE-Wing.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+h1,h2,h3,h4,h5 {
+  font-family: $font;
+}
+.container {
+  padding: 0 10px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 280px;
+  @media all and (min-width: $breakpoint-xs) {
+    max-width: 530px;
+  }
+  @media all and (min-width: $breakpoint-sm) {
+    max-width: 750px;
+  }
+  @media all and (min-width: $breakpoint-md) {
+    max-width: 960px;
+    padding: 0 20px;
+  }
+  @media all and (min-width: $breakpoint-lg) {
+    max-width: 1140px;
+  }
+  @media screen and (min-width: $breakpoint-xlg) {
+    max-width: 1410px;
+  }
+
+}
+
+.background-full-screen {
+  width: 100%;
+  min-height: 100vh;
+  background: url("./images/darth_vader.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.color-white {
+  color: $c-white;
+}
+
+.color-yellow {
+  color: $c-yellow;
+}
+
+.color-orange {
+  color: $c-orange;
+}

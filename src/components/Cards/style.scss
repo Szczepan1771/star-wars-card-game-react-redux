@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+
+.card__boards {
+  margin-top: 50px;
+
+}
+
+.selectedCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px solid $c-yellow;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background-color: rgba(0,0,0,0.7);
+
+  > div {
+    width: 15%;
+  }
+
+  .credits {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    width: auto;
+    span {
+      padding-left: 3px;
+      font-size: 1.5rem;
+      font-family: 'star-wars-jedi',sans-serif;
+    }
+    @media screen and (max-width: $breakpoint-lg) {
+      right: 5px;
+      h1 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

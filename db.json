@@ -1,0 +1,695 @@
+{
+  "Rebels": [
+    {
+      "id": "1",
+      "name": "Luke Skywalker",
+      "fraction": "Rebels",
+      "attack": 25,
+      "defence": 20,
+      "health": 40,
+      "avatar": "https://vignette.wikia.nocookie.net/parody/images/9/9b/Luke_Skywalker.png/revision/latest?cb=20170422170845",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "2",
+      "name": "R2-D2",
+      "fraction": "Rebels",
+      "attack": 11,
+      "defence": 33,
+      "health": 35,
+      "avatar": "https://vignette.wikia.nocookie.net/droidapedia/images/0/0c/R2-D2.png/revision/latest?cb=20161209185108",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "3",
+      "name": "Han Solo",
+      "fraction": "Rebels",
+      "attack": 32,
+      "defence": 8,
+      "health": 32,
+      "avatar": "https://vignette.wikia.nocookie.net/vsbattles/images/9/90/HanSolo-1.png/revision/latest/scale-to-width-down/1000?cb=20170103232759",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "4",
+      "name": "Chewbacca",
+      "fraction": "Rebels",
+      "attack": 28,
+      "defence": 30,
+      "health": 45,
+      "avatar": "https://vignette.wikia.nocookie.net/disney/images/f/f1/Chewbacca.png/revision/latest?cb=20141130190424",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "5",
+      "name": "Leia Organa",
+      "fraction": "Rebels",
+      "attack": 26,
+      "defence": 5,
+      "health": 28,
+      "avatar": "https://vignette.wikia.nocookie.net/vsbattles/images/8/82/Leia_Organa-Skywalker.png/revision/latest?cb=20170227150715",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "6",
+      "name": "Lando Carlissian",
+      "fraction": "Rebels",
+      "attack": 31,
+      "defence": 15,
+      "health": 31,
+      "avatar": "https://vignette.wikia.nocookie.net/vsbattles/images/c/c2/Lando_Calrissian.png/revision/latest/scale-to-width-down/1000?cb=20170418193406",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "7",
+      "name": "Admiral Ackbar",
+      "fraction": "Rebels",
+      "attack": 16,
+      "defence": 30,
+      "health": 33,
+      "avatar": "https://vignette.wikia.nocookie.net/starwars/images/2/29/Admiral_Ackbar_RH.png/revision/latest/scale-to-width-down/1000?cb=20170907053204",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "8",
+      "name": "Ben Kenobi",
+      "fraction": "Rebels",
+      "attack": 20,
+      "defence": 37,
+      "health": 43,
+      "avatar": "https://vignette.wikia.nocookie.net/rebel-alliance/images/3/32/Ben_Kenobi.png/revision/latest?cb=20161029034321",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "9",
+      "name": "Jyn Erso",
+      "fraction": "Rebels",
+      "attack": 27,
+      "defence": 31,
+      "health": 22,
+      "avatar": "https://vignette.wikia.nocookie.net/vsbattles/images/d/dc/Felicity-jones-as-jyn-erso-the-characters-of-rogue-one-a-star-wars-story-cut-out-no-background-hd-hi-res.png/revision/latest?cb=20170213182728",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "10",
+      "name": "Cassian Andor",
+      "fraction": "Rebels",
+      "attack": 21,
+      "defence": 33,
+      "health": 23,
+      "avatar": "https://vignette.wikia.nocookie.net/jedipedy/images/8/8f/Cassian_Andor.png/revision/latest?cb=20170319140335&path-prefix=fy",
+      "value": 10,
+      "mana": 1
+    }
+  ],
+  "Jedi": [
+    {
+      "id": "11",
+      "name": "Yoda",
+      "fraction": "Jedi",
+      "attack": 46,
+      "defence": 15,
+      "health": 35,
+      "avatar": "https://vignette.wikia.nocookie.net/gwiezdnewojnyjedi/images/c/c3/Yoda_TPM_RotS.png/revision/latest?cb=20150614102122&path-prefix=pl",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "12",
+      "name": "Qui Gon Jinn",
+      "fraction": "Jedi",
+      "attack": 28,
+      "defence": 33,
+      "health": 35,
+      "avatar": "https://vignette.wikia.nocookie.net/disney/images/a/ad/Qui-Gon_Jinn.png/revision/latest?cb=20170405132816&path-prefix=pl",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "13",
+      "name": "Mace Windu",
+      "fraction": "Jedi",
+      "attack": 46,
+      "defence": 13,
+      "health": 38,
+      "avatar": "https://vignette.wikia.nocookie.net/parody/images/b/bf/Mace_Windu.png/revision/latest?cb=20170522231128",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "14",
+      "name": "Anakin Skywalker",
+      "fraction": "Jedi",
+      "attack": 42,
+      "defence": 20,
+      "health": 34,
+      "avatar": "https://vignette.wikia.nocookie.net/one-minute-meelee-fanon/images/7/76/Anakin_%282%29.png/revision/latest?cb=20181231121934",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "15",
+      "name": "Bastila Shan",
+      "fraction": "Jedi",
+      "attack": 28,
+      "defence": 32,
+      "health": 36,
+      "avatar": "https://vignette.wikia.nocookie.net/p__/images/f/f1/Bastila-shan.png/revision/latest?cb=20130517001619&path-prefix=protagonist",
+      "value": 10,
+      "mana": 1
+    }
+  ],
+  "Sith": [
+    {
+      "id": "16",
+      "name": "Galactic Emperor",
+      "fraction": "Sith",
+      "attack": 44,
+      "defence": 26,
+      "health": 40,
+      "avatar": "https://vignette.wikia.nocookie.net/starwars/images/a/a3/Emperor_Palpatine_GA.png/revision/latest/scale-to-width-down/500?cb=20170503060153",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "17",
+      "name": "Darth Vader",
+      "fraction": "Sith",
+      "attack": 37,
+      "defence": 35,
+      "health": 46,
+      "avatar": "https://vignette.wikia.nocookie.net/zeropedia/images/4/49/Darth_Vader4.png/revision/latest?cb=20160216080323&path-prefix=pl",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "18",
+      "name": "Darth Revan",
+      "fraction": "Sith",
+      "attack": 44,
+      "defence": 29,
+      "health": 38,
+      "avatar": "https://vignette.wikia.nocookie.net/deathbattlefanon/images/9/9f/Revan.png/revision/latest?cb=20180612195326",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "19",
+      "name": "Darth Maul",
+      "fraction": "Sith",
+      "attack": 34,
+      "defence": 22,
+      "health": 32,
+      "avatar": "https://vignette.wikia.nocookie.net/vsbattles/images/5/54/Darth_Maul_render.png/revision/latest?cb=20170728104618",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "20",
+      "name": "Darth Plagueis",
+      "fraction": "Sith",
+      "attack": 41,
+      "defence": 33,
+      "health": 36,
+      "avatar": "https://vignette.wikia.nocookie.net/swmerchandise/images/0/01/18_Darth_Plagueis_%28A5087%29_P.gif/revision/latest?cb=20140525202445",
+      "value": 10,
+      "mana": 1
+    }
+  ],
+  "Bounty_Hunters": [
+    {
+      "id": "21",
+      "name": "Boba Fett",
+      "fraction": "bounty_hunter",
+      "attack": 33,
+      "defence": 32,
+      "health": 38,
+      "avatar": "https://vignette.wikia.nocookie.net/disney/images/f/f4/Boba_Fett3.png/revision/latest?cb=20170301145056&path-prefix=pl",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "22",
+      "name": "Bossk",
+      "fraction": "bounty_hunter",
+      "attack": 26,
+      "defence": 38,
+      "health": 44,
+      "avatar": "https://vignette.wikia.nocookie.net/star-wars-canon/images/f/f4/Bossk_detail.png/revision/latest?cb=20151215031630",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "23",
+      "name": "Cad Bane",
+      "fraction": "bounty_hunter",
+      "attack": 31,
+      "defence": 19,
+      "health": 33,
+      "avatar": "https://vignette.wikia.nocookie.net/neoencyclopedia/images/4/4d/Cad_Bane_TCW.png/revision/latest?cb=20140112112456",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "24",
+      "name": "Aura Sing",
+      "fraction": "bounty_hunter",
+      "attack": 31,
+      "defence": 22,
+      "health": 31,
+      "avatar": "https://vignette.wikia.nocookie.net/evil/images/9/92/Aurra_Sing.png/revision/latest?cb=20180131125758&path-prefix=pl",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "25",
+      "name": "IG 88",
+      "fraction": "bounty_hunter",
+      "attack": 33,
+      "defence": 14,
+      "health": 29,
+      "avatar": "https://vignette.wikia.nocookie.net/starwars/images/f/f2/IG-88.png/revision/latest?cb=20160911044452",
+      "value": 10,
+      "mana": 1
+    }
+  ],
+  "AllCards": [
+    {
+      "id": "1",
+      "name": "Luke Skywalker",
+      "fraction": "Rebels",
+      "attack": 25,
+      "defence": 20,
+      "health": 40,
+      "avatar": "https://vignette.wikia.nocookie.net/parody/images/9/9b/Luke_Skywalker.png/revision/latest?cb=20170422170845",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "2",
+      "name": "R2-D2",
+      "fraction": "Rebels",
+      "attack": 11,
+      "defence": 33,
+      "health": 35,
+      "avatar": "https://vignette.wikia.nocookie.net/droidapedia/images/0/0c/R2-D2.png/revision/latest?cb=20161209185108",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "3",
+      "name": "Han Solo",
+      "fraction": "Rebels",
+      "attack": 32,
+      "defence": 8,
+      "health": 32,
+      "avatar": "https://vignette.wikia.nocookie.net/vsbattles/images/9/90/HanSolo-1.png/revision/latest/scale-to-width-down/1000?cb=20170103232759",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "4",
+      "name": "Chewbacca",
+      "fraction": "Rebels",
+      "attack": 28,
+      "defence": 30,
+      "health": 45,
+      "avatar": "https://vignette.wikia.nocookie.net/disney/images/f/f1/Chewbacca.png/revision/latest?cb=20141130190424",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "5",
+      "name": "Leia Organa",
+      "fraction": "Rebels",
+      "attack": 26,
+      "defence": 5,
+      "health": 28,
+      "avatar": "https://vignette.wikia.nocookie.net/vsbattles/images/8/82/Leia_Organa-Skywalker.png/revision/latest?cb=20170227150715",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "6",
+      "name": "Lando Carlissian",
+      "fraction": "Rebels",
+      "attack": 31,
+      "defence": 15,
+      "health": 31,
+      "avatar": "https://vignette.wikia.nocookie.net/vsbattles/images/c/c2/Lando_Calrissian.png/revision/latest/scale-to-width-down/1000?cb=20170418193406",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "7",
+      "name": "Admiral Ackbar",
+      "fraction": "Rebels",
+      "attack": 16,
+      "defence": 30,
+      "health": 33,
+      "avatar": "https://vignette.wikia.nocookie.net/starwars/images/2/29/Admiral_Ackbar_RH.png/revision/latest/scale-to-width-down/1000?cb=20170907053204",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "8",
+      "name": "Ben Kenobi",
+      "fraction": "Rebels",
+      "attack": 20,
+      "defence": 37,
+      "health": 43,
+      "avatar": "https://vignette.wikia.nocookie.net/rebel-alliance/images/3/32/Ben_Kenobi.png/revision/latest?cb=20161029034321",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "9",
+      "name": "Jyn Erso",
+      "fraction": "Rebels",
+      "attack": 27,
+      "defence": 31,
+      "health": 22,
+      "avatar": "https://vignette.wikia.nocookie.net/vsbattles/images/d/dc/Felicity-jones-as-jyn-erso-the-characters-of-rogue-one-a-star-wars-story-cut-out-no-background-hd-hi-res.png/revision/latest?cb=20170213182728",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "10",
+      "name": "Cassian Andor",
+      "fraction": "Rebels",
+      "attack": 21,
+      "defence": 33,
+      "health": 23,
+      "avatar": "https://vignette.wikia.nocookie.net/jedipedy/images/8/8f/Cassian_Andor.png/revision/latest?cb=20170319140335&path-prefix=fy",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "11",
+      "name": "Yoda",
+      "fraction": "Jedi",
+      "attack": 46,
+      "defence": 15,
+      "health": 35,
+      "avatar": "https://vignette.wikia.nocookie.net/gwiezdnewojnyjedi/images/c/c3/Yoda_TPM_RotS.png/revision/latest?cb=20150614102122&path-prefix=pl",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "12",
+      "name": "Qui Gon Jinn",
+      "fraction": "Jedi",
+      "attack": 28,
+      "defence": 33,
+      "health": 35,
+      "avatar": "https://vignette.wikia.nocookie.net/disney/images/a/ad/Qui-Gon_Jinn.png/revision/latest?cb=20170405132816&path-prefix=pl",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "13",
+      "name": "Mace Windu",
+      "fraction": "Jedi",
+      "attack": 46,
+      "defence": 13,
+      "health": 38,
+      "avatar": "https://vignette.wikia.nocookie.net/parody/images/b/bf/Mace_Windu.png/revision/latest?cb=20170522231128",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "14",
+      "name": "Anakin Skywalker",
+      "fraction": "Jedi",
+      "attack": 42,
+      "defence": 20,
+      "health": 34,
+      "avatar": "https://vignette.wikia.nocookie.net/one-minute-meelee-fanon/images/7/76/Anakin_%282%29.png/revision/latest?cb=20181231121934",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "15",
+      "name": "Bastila Shan",
+      "fraction": "Jedi",
+      "attack": 28,
+      "defence": 32,
+      "health": 36,
+      "avatar": "https://vignette.wikia.nocookie.net/p__/images/f/f1/Bastila-shan.png/revision/latest?cb=20130517001619&path-prefix=protagonist",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "16",
+      "name": "Galactic Emperor",
+      "fraction": "Sith",
+      "attack": 44,
+      "defence": 26,
+      "health": 40,
+      "avatar": "https://vignette.wikia.nocookie.net/starwars/images/a/a3/Emperor_Palpatine_GA.png/revision/latest/scale-to-width-down/500?cb=20170503060153",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "17",
+      "name": "Darth Vader",
+      "fraction": "Sith",
+      "attack": 37,
+      "defence": 35,
+      "health": 46,
+      "avatar": "https://vignette.wikia.nocookie.net/zeropedia/images/4/49/Darth_Vader4.png/revision/latest?cb=20160216080323&path-prefix=pl",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "18",
+      "name": "Darth Revan",
+      "fraction": "Sith",
+      "attack": 44,
+      "defence": 29,
+      "health": 38,
+      "avatar": "https://vignette.wikia.nocookie.net/deathbattlefanon/images/9/9f/Revan.png/revision/latest?cb=20180612195326",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "19",
+      "name": "Darth Maul",
+      "fraction": "Sith",
+      "attack": 34,
+      "defence": 22,
+      "health": 32,
+      "avatar": "https://vignette.wikia.nocookie.net/vsbattles/images/5/54/Darth_Maul_render.png/revision/latest?cb=20170728104618",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "20",
+      "name": "Darth Plagueis",
+      "fraction": "Sith",
+      "attack": 41,
+      "defence": 33,
+      "health": 36,
+      "avatar": "https://vignette.wikia.nocookie.net/swmerchandise/images/0/01/18_Darth_Plagueis_%28A5087%29_P.gif/revision/latest?cb=20140525202445",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "21",
+      "name": "Boba Fett",
+      "fraction": "bounty_hunter",
+      "attack": 33,
+      "defence": 32,
+      "health": 38,
+      "avatar": "https://vignette.wikia.nocookie.net/disney/images/f/f4/Boba_Fett3.png/revision/latest?cb=20170301145056&path-prefix=pl",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "22",
+      "name": "Bossk",
+      "fraction": "bounty_hunter",
+      "attack": 26,
+      "defence": 38,
+      "health": 44,
+      "avatar": "https://vignette.wikia.nocookie.net/star-wars-canon/images/f/f4/Bossk_detail.png/revision/latest?cb=20151215031630",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "23",
+      "name": "Cad Bane",
+      "fraction": "bounty_hunter",
+      "attack": 31,
+      "defence": 19,
+      "health": 33,
+      "avatar": "https://vignette.wikia.nocookie.net/neoencyclopedia/images/4/4d/Cad_Bane_TCW.png/revision/latest?cb=20140112112456",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "24",
+      "name": "Aura Sing",
+      "fraction": "bounty_hunter",
+      "attack": 31,
+      "defence": 22,
+      "health": 31,
+      "avatar": "https://vignette.wikia.nocookie.net/evil/images/9/92/Aurra_Sing.png/revision/latest?cb=20180131125758&path-prefix=pl",
+      "value": 10,
+      "mana": 1
+    },
+    {
+      "id": "25",
+      "name": "IG 88",
+      "fraction": "bounty_hunter",
+      "attack": 33,
+      "defence": 14,
+      "health": 29,
+      "avatar": "https://vignette.wikia.nocookie.net/starwars/images/f/f2/IG-88.png/revision/latest?cb=20160911044452",
+      "value": 10,
+      "mana": 1
+    }
+  ],
+  "PlayerDeck": [
+    {
+      "playerAllCards": [
+        {
+          "id": "13",
+          "name": "Mace Windu",
+          "fraction": "Jedi",
+          "attack": 46,
+          "defence": 13,
+          "health": 38,
+          "avatar": "https://vignette.wikia.nocookie.net/parody/images/b/bf/Mace_Windu.png/revision/latest?cb=20170522231128",
+          "value": 10,
+          "mana": 1
+        },
+        {
+          "id": "18",
+          "name": "Darth Revan",
+          "fraction": "Sith",
+          "attack": 44,
+          "defence": 29,
+          "health": 38,
+          "avatar": "https://vignette.wikia.nocookie.net/deathbattlefanon/images/9/9f/Revan.png/revision/latest?cb=20180612195326",
+          "value": 10,
+          "mana": 1
+        },
+        {
+          "id": "14",
+          "name": "Anakin Skywalker",
+          "fraction": "Jedi",
+          "attack": 42,
+          "defence": 20,
+          "health": 34,
+          "avatar": "https://vignette.wikia.nocookie.net/one-minute-meelee-fanon/images/7/76/Anakin_%282%29.png/revision/latest?cb=20181231121934",
+          "value": 10,
+          "mana": 1
+        },
+        {
+          "id": "21",
+          "name": "Boba Fett",
+          "fraction": "bounty_hunter",
+          "attack": 33,
+          "defence": 32,
+          "health": 38,
+          "avatar": "https://vignette.wikia.nocookie.net/disney/images/f/f4/Boba_Fett3.png/revision/latest?cb=20170301145056&path-prefix=pl",
+          "value": 10,
+          "mana": 1
+        },
+        {
+          "id": "7",
+          "name": "Admiral Ackbar",
+          "fraction": "Rebels",
+          "attack": 16,
+          "defence": 30,
+          "health": 33,
+          "avatar": "https://vignette.wikia.nocookie.net/starwars/images/2/29/Admiral_Ackbar_RH.png/revision/latest/scale-to-width-down/1000?cb=20170907053204",
+          "value": 10,
+          "mana": 1
+        }
+      ],
+      "deck": [],
+      "tutorialFinished": true,
+      "credits": 0,
+      "won": 0,
+      "percentWon": 0,
+      "id": "Tutorial"
+    },
+    {
+      "playerAllCards": [],
+      "credits": 0,
+      "won": 0,
+      "games": 0,
+      "percentWon": 0,
+      "deck": [
+        {
+          "id": "16",
+          "name": "Galactic Emperor",
+          "fraction": "Sith",
+          "attack": 44,
+          "defence": 26,
+          "health": 40,
+          "avatar": "https://vignette.wikia.nocookie.net/starwars/images/a/a3/Emperor_Palpatine_GA.png/revision/latest/scale-to-width-down/500?cb=20170503060153",
+          "value": 10,
+          "mana": 1
+        },
+        {
+          "id": "20",
+          "name": "Darth Plagueis",
+          "fraction": "Sith",
+          "attack": 41,
+          "defence": 33,
+          "health": 36,
+          "avatar": "https://vignette.wikia.nocookie.net/swmerchandise/images/0/01/18_Darth_Plagueis_%28A5087%29_P.gif/revision/latest?cb=20140525202445",
+          "value": 10,
+          "mana": 1
+        },
+        {
+          "id": "19",
+          "name": "Darth Maul",
+          "fraction": "Sith",
+          "attack": 34,
+          "defence": 22,
+          "health": 32,
+          "avatar": "https://vignette.wikia.nocookie.net/vsbattles/images/5/54/Darth_Maul_render.png/revision/latest?cb=20170728104618",
+          "value": 10,
+          "mana": 1
+        },
+        {
+          "id": "23",
+          "name": "Cad Bane",
+          "fraction": "bounty_hunter",
+          "attack": 31,
+          "defence": 19,
+          "health": 33,
+          "avatar": "https://vignette.wikia.nocookie.net/neoencyclopedia/images/4/4d/Cad_Bane_TCW.png/revision/latest?cb=20140112112456",
+          "value": 10,
+          "mana": 1
+        },
+        {
+          "id": "8",
+          "name": "Ben Kenobi",
+          "fraction": "Rebels",
+          "attack": 20,
+          "defence": 37,
+          "health": 43,
+          "avatar": "https://vignette.wikia.nocookie.net/rebel-alliance/images/3/32/Ben_Kenobi.png/revision/latest?cb=20161029034321",
+          "value": 10,
+          "mana": 1
+        }
+      ],
+      "tutorialFinished": true,
+      "id": "Adam"
+    }
+  ]
+}

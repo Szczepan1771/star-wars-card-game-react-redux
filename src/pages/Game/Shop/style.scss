@@ -1,0 +1,13 @@
+@import '../../../styles/variables';
+
+.all__cards {
+  .card {
+    background: black;
+  }
+  .card__flip {
+    transform: none;
+  }
+}
+.color-yellow,.color-white {
+  text-shadow: -1px 2px black;
+}

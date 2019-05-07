@@ -1,0 +1,26 @@
+@import '../../../styles/variables';
+
+.min-height-300 {
+  //min-height: 300px;
+}
+
+@keyframes pickCard {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.selected__cards {
+  .card {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: pickCard .2s linear forwards;
+  }
+}
+
+

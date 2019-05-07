@@ -1,0 +1,386 @@
+@import "../../styles/variables";
+
+.card {
+  border-radius: 15px;
+  border: 2px solid $c-orange;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px;
+  box-sizing: border-box;
+  padding: 1rem .5rem 1.2rem .5rem;
+  position: relative;
+  transition: transform .2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__destroyed-card{
+    border-radius: 15px;
+    background-color: black;
+    filter: grayscale(100%);
+    border: 2px solid $c-orange;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    box-sizing: border-box;
+    padding: 1rem .5rem 1.2rem .5rem;
+    position: relative;
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+  }
+
+
+
+  &.light__side {
+    background: url("../../images/light_card.jpg") no-repeat;
+    .card__fraction {
+      color: #00af00;
+    }
+  }
+
+  &.dark__side {
+    background: url("../../images/dark_side.jpg") no-repeat;
+    .card__fraction {
+      color: red;
+    }
+  }
+
+  &.bounty__hunter {
+    background: url("../../images/BH.jpg") no-repeat;
+    .card__fraction {
+      color: gold;
+    }
+  }
+
+  &.rebels {
+    background: url("../../images/rebels.jpg") no-repeat;
+    .card__fraction {
+      color: blue;
+    }
+  }
+
+  &.light__side, &.dark__side, &.rebels, &.bounty__hunter {
+    background-size: cover;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  &__flip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all .3s ease-in-out;
+    perspective: 1000px;
+    min-height: 250px;
+    transform: rotateY(180deg) translate3d(0, 0, 0);
+
+    &--front, &--back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      backface-visibility: hidden;
+      border-radius: 3px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    &--front {
+      z-index: 2;
+      transform: rotateY(180deg);
+    }
+
+    &--back {
+      transform: rotateY(0);
+    }
+  }
+
+  &__name{
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  &__attack{
+    position: absolute;
+    bottom: 22%;
+    left:5%;
+    color: white;
+    font-size: 35px;
+  }
+
+  &__health{
+    position: absolute;
+    bottom: -13%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 35px;
+    &__decrease-defence{
+      position: absolute;
+      bottom: -13%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 35px;
+    }
+    &__after-attack{
+      position: absolute;
+      bottom: -13%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 35px;
+      animation: afterAttack 1s linear forwards;
+    }
+  }
+
+  &__defence{
+    position: absolute;
+    bottom: 22%;
+    right: 15%;
+    transform: translateX(50%);
+    color: white;
+    font-size: 35px;
+
+    &__decrease-defence{
+      position: absolute;
+      bottom: 22%;
+      right: 15%;
+      transform: translateX(50%);
+      color: white;
+      font-size: 35px;
+      animation: decreaseDefence 1s linear forwards;
+    }
+
+    &__after-attack{
+      position: absolute;
+      bottom: 22%;
+      right: 15%;
+      transform: translateX(50%);
+      color: darkred;
+      font-size: 35px;
+    }
+
+    @keyframes decreaseDefence {
+      0%{
+
+      }
+
+      50%{
+        color: white;
+      }
+
+      52%{
+        color: red;
+      }
+
+      100%{
+        color: red;
+      }
+    }
+
+    @keyframes afterAttack {
+      0%{
+
+      }
+
+      52%{
+        color: red;
+      }
+
+      100%{
+        color: red;
+      }
+    }
+
+  }
+
+
+  .hp-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 14%;
+    left:50%;
+    transform: translateX(-50%);
+    &__after-attack{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      bottom: 14%;
+      left:50%;
+      transform: translateX(-50%);
+      animation: afterAttackIcon 1s linear forwards;
+    }
+
+    &__decrease-defence{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      bottom: 14%;
+      left:50%;
+      transform: translateX(-50%);
+    }
+  }
+  .attack-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 8.5%;
+    bottom:50%;
+  }
+  .defence-icon{
+    position: absolute;
+    width: 45px;
+    height: 30px;
+    right: 15%;
+    transform: translateX(50%);
+    bottom:49%;
+
+    &__after-attack{
+      position: absolute;
+      width: 45px;
+      height: 30px;
+      right: 15%;
+      transform: translateX(50%);
+      bottom:49%;
+    }
+    &__decrease-defence{
+      position: absolute;
+      width: 45px;
+      height: 30px;
+      right: 15%;
+      transform: translateX(50%);
+      bottom:49%;
+      animation: decreaseDefenceIcon 1s linear forwards;
+      z-index: 2;
+    }
+  }
+
+  @keyframes decreaseDefenceIcon {
+    0%{
+      right: 15%;
+      transform: translateX(50%);
+      bottom:49%;
+    }
+
+    40%{
+      right: 15%;
+      transform: translateX(50%);
+      bottom:60%;
+    }
+
+    50%{
+      right: 15%;
+      transform: translateX(50%);
+      bottom:42%;
+    }
+
+    60%{
+      right: 15%;
+      transform: translateX(50%);
+      bottom:49%;
+    }
+
+    100%{
+      right: 15%;
+      transform: translateX(50%);
+      bottom:49%;
+    }
+  }
+
+  @keyframes afterAttackIcon {
+    0%{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      bottom: 14%;
+      left:50%;
+      transform: translateX(-50%);
+    }
+
+    40%{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      bottom: 25%;
+      left:50%;
+      transform: translateX(-50%);
+    }
+
+    50%{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      bottom: 7%;
+      left:50%;
+      transform: translateX(-50%);
+    }
+
+    60%{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      bottom: 14%;
+      left:50%;
+      transform: translateX(-50%);
+    }
+
+    100%{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      bottom: 14%;
+      left:50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
+.opponent__cards {
+  .card {
+    &__flip {
+      transform: rotateY(0) translate3d(0, 0, 0);
+      min-height: 150px;
+    }
+  }
+}
+
+.player__cards {
+  .card {
+    &__flip {
+      min-height: 150px;
+    }
+  }
+}
+
+.avatar {
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  top:12%;
+  height: 100%;
+  object-fit: contain;
+}

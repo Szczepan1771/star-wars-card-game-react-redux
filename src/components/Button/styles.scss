@@ -1,0 +1,71 @@
+@import "../../styles/variables";
+
+.btn, .btn2 {
+  background-color: $c-yellow;
+  padding: 10px 30px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: $c-button-text;
+  font-weight: bold;
+  margin: 30px auto;
+  display: block;
+  text-transform: uppercase;
+  transition: background-color .4s ease-in-out, color .4s linear;
+
+  &:hover {
+    background-color: darken($c-yellow, 55%);
+    color: $c-white
+  }
+}
+
+.menu-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 300px;
+  height: 80px;
+  margin: 45px auto;
+  border: 0;
+  background-color: black;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: $font;
+  cursor: pointer;
+  z-index: 1;
+  transition: font-size .2s ease-in, font-weight .2s linear;
+
+  clip-path: polygon(50% 0%, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0 50%, 5% 0);
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 98%;
+    height: 92%;
+    clip-path: polygon(50% 0%, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0 50%, 5% 0);
+    background-color: $c-yellow;
+    z-index: -1;
+    transition: background-color .2s ease-in;
+  }
+
+  &:hover {
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    &:after {
+      background-color: lighten($c-yellow, 30%);
+    }
+  }
+}
+
+
+
+

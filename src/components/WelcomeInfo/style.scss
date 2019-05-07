@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.welcome-info {
+  width: 100%;
+  margin: 0 auto 20px;
+  text-align: center;
+  padding: 30px 0 0;
+  p {
+    color: $c-white;
+  }
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
